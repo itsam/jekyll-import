@@ -91,7 +91,9 @@ HTML
 
             data["layout"] = post[:type]
             title = data["title"] = post[:title].strip.force_encoding("UTF-8")
-            time = data["created"] = post[:created]
+            time = data["date"] = post[:created]
+
+            data["date"] = Time.at(data["date"]).iso8601(0)
             
             # Execute the query for each image_id to get the real uri
             data["img_ids"].each do|n|
