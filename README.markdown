@@ -36,3 +36,20 @@ irb> JekyllImport::Importers.const_get(importer_class).run(options_hash)
 
 jekyll-import has its own documentation site, found at https://import.jekyllrb.com.
 Dedicated [documentation for each migrator](https://import.jekyllrb.com/docs/home/) is available there.
+
+### After installing run the following
+
+```
+ruby -e 'require "jekyll-import";
+    JekyllImport::Importers::Drupal7.run({
+      "engine"   => "mysql",
+      "dbname"   => "XXXX",
+      "user"     => "XXXX",
+      "password" => "XXXX",
+      "host"     => "localhost",
+      "types"    => ["article", "page", "mklproject", "people", "project", "publication", "research"]
+    })'
+```
+
+
+
