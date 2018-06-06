@@ -6,6 +6,12 @@ The new __Jekyll__ command for importing from various blogs to Jekyll format.
 
 **Note: _migrators_ are now called _importers_ and are only available if one installs the `jekyll-import` _gem_.**
 
+## My custom changes 
+1. Covers custom content types
+2. Includes also the images URI for each post
+
+Based on [Migrating-from-Drupal-to-Jekyll](https://github.com/antonizoon/antonizoon.github.io/wiki/Migrating-from-Drupal-to-Jekyll) approach (although rather old now...)
+
 ## How `jekyll-import` works:
 
 ### Jekyll v2.x and higher
